@@ -1,0 +1,77 @@
+<% layout('/layouts/boilerplate.ejs') %>
+<body>
+
+ <div class="col-6 offset-3"> 
+<h3>create a new Listing:</h3>
+  
+  <form action="/listings" method="post" class="needs-validation" novalidate>
+     <div class="mt-3">
+        <label for="title" class="form-lable">Title</label>
+        <input type="text" name="title" placeholder="Enter title" id="title" class="form-control"  required>
+        <div class="valid-feedback">
+         Looks good!
+        </div>
+        <div class="invalid-feedback">
+        please enter a title
+        </div>
+     </div>
+     
+     <div class="mt-3">
+        <label for="discription" class="form-lable">Discription</label>
+        <textarea type="text" name="description" placeholder="discription..." id="discription" class="form-control" required></textarea>
+         <div class="valid-feedback">
+          Looks good!
+         </div>
+         <div class="invalid-feedback">
+         please enter a discription
+         </div>
+     </div>
+    
+     <div class="mt-3">
+        <label for="image" class="form-lable">Image</label>
+        <input type="text" name="image" placeholder="Enter image url" id="image" class="form-control">
+     </div>
+   
+       <div class="row">
+       
+        <div class="mt-3 col-md-4">
+            <label for="price" class="form-lable">Price</label>
+            <input name="price" placeholder="Enter price" id="price" class="form-control " required >
+            <div class="valid-feedback">
+             Looks good!
+             </div>
+            <div class="invalid-feedback">
+            please enter a price
+            </div>
+       </div>
+
+         <div class="mt-3 col-md-8">
+            <label for="country" class="form-lable">Country</label>
+            <input type="text" name="country" placeholder="Enter country name" id="country" class="form-control " required>
+            <div class="valid-feedback">
+             Looks good!
+             </div>
+            <div class="invalid-feedback">
+            please enter a country
+            </div>
+         </div>
+     </div>
+     
+     <div class="mt-3">
+        <label for="location" class="form-lable">Location</label>
+        <input type="text" name="location" placeholder="Enter location" id="location" class="form-control " required>
+         <div class="valid-feedback">
+          Looks good!
+         </div>
+         <div class="invalid-feedback">
+         please enter a location
+         </div>
+    </div>
+
+     <button class="btn mt-3 add">submit</button>
+  </form>
+  
+</div>
+
+
+</body>
